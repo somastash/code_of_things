@@ -3,7 +3,7 @@
 ## How to clone
 
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/somastash/files/refs/heads/main/clone) code_architect
+bash <(curl -s https://raw.githubusercontent.com/somastash/files/refs/heads/main/clone) code_of_things
 ```
 
 ## License
