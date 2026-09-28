@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "code_of_things",
+  "version": "1.0.0",
+  "scripts": {
+    "build_slides": "marp -wI slides",
+    "build_theme": "lessc .theme/style.less .theme/style.css",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build_slides": {
+      "patterns": [
+        "slides/**/*",
+        ".theme/**/*"
+      ],
+      "extensions": "md,css",
+      "delay": 100,
+      "inherit": true
+    },
+    "build_theme": {
+      "patterns": [
+        ".theme/**/*"
+      ],
+      "extensions": "less",
+      "delay": 100,
+      "inherit": true
+    }
+  },
+  "marp": {
+    "html": true,
+    "lang": "ja",
+    "themeSet": ".theme"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somastash/code_of_things.git"
+  },
+  "author": "Satoshi Soma (https://github.com/somastash)",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/somastash/code_of_things/issues"
+  },
+  "homepage": "https://github.com/somastash/code_of_things#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0",
+    "less": "^4.4.1"
+  }
+}
