@@ -203,7 +203,7 @@ LED やモーター、ブザーなどへの*出力*の処理に至るまでを�
 <div class="cols c23 gap">
 <div>
 <figure>
-<img src="../.assets/soldering.png">
+<img class="rounded" src="../.assets/soldering.png">
 </figure>
 </div>
 <div>
@@ -221,4 +221,31 @@ Arduino でモーターやボタンなどの電子部品を制御するには、
 </div>
 </div>
 
+---
 
+<!-- _class: small -->
+
+<div class="cols c23 gap">
+<div>
+<figure>
+<img class="rounded" src="../.assets/breadboard.png">
+</figure>
+</div>
+<div>
+
+## ブレッドボード
+ブレッドボードはプラスチックの板に規則正しく並んだ穴が空いた形の道具だ。穴に部品の電極を差すことで電子回路を組むことができる。
+
+左図の<span class="green">緑</span>で表した穴は互いに*導通*しているため、
+例えば:
+
+- `1` 行目の `a` に差した電極と、
+- `1` 行目の `e` に差した電極は、
+
+*電気的に接続された状態*となる。
+
+逆に、`1a` と `2a` は繋がっていないし、`1e` と `1f` も繋がっていない。
+
+
+</div>
+</div>
