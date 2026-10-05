@@ -23,13 +23,13 @@ void setup() {
 
 void loop() {
   // 角度から明るさを計算
-  int br = sin(angle);  // -1.0 から +1.0 
-  br += 1.0f;           // 0.0 から 2.0
-  br *= 127.5f;         // 0.0 から 255.0
-  br = round(br);       // 小数点以下を四捨五入
+  float br = sin(angle); // -1.0 から +1.0 
+  br += 1.0f;            // 0.0 から 2.0
+  br *= 127.5f;          // 0.0 から 255.0
+  int bri = round(br);   // 小数点以下を四捨五入
   
   // LEDに出力
-  analogWrite(LED_PIN, br);
+  analogWrite(LED_PIN, bri);
 
   // 角度を変化させる（1フレーム分）
   angle += angle_spd;
