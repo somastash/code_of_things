@@ -3,6 +3,9 @@
 Arduino リファレンス:
 https://www.musashinodenpa.com/arduino/ref/
 
+回路:
+D9 -> R220 -> LED(+) -> LED(-) -> GND
+
 ****/
 
 // 定数を定義
@@ -10,8 +13,8 @@ const int LED_PIN = 9; // 使用するピン = 9番
 
 // setup は最初に一回だけ実行される
 void setup() {
-  // シリアル通信の準備
-  Serial.begin(9600); // bps: 9600
+  // 9番ピンを出力モードに
+  pinMode(LED_PIN, OUTPUT);
 }
 
 // loop は高速で繰り返し実行され続ける
