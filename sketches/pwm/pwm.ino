@@ -4,7 +4,7 @@ Arduino リファレンス:
 https://www.musashinodenpa.com/arduino/ref/
 
 回路:
-D9 -> R220 -> LED(+) -> LED(-) -> GND
+D9 --- R220 --- LED(+) --- LED(-) --- GND
 
 ****/
 

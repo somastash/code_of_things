@@ -4,7 +4,7 @@ Arduino リファレンス:
 https://www.musashinodenpa.com/arduino/ref/
 
 回路:
-D9 -> R220 -> LED(+) -> LED(-) -> GND
+D9 --- R220 --- LED(+) --- LED(-) --- GND
 
 ****/
 
@@ -36,7 +36,7 @@ void loop() {
   
   // もし最大角度を超えたら
   if (angle >= angle_max) {
-    angle -= angle_max; // 角度 - 最大角度
+    angle -= angle_max; // 現在角度 - 最大角度
   }
 
   // 一瞬待つ
