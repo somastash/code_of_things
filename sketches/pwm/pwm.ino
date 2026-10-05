@@ -45,4 +45,6 @@ void loop() {
     analogWrite(LED_PIN, i); // 明るさ = i
     delay(5);
   }
+
+  // 次の loop へ...
 }
