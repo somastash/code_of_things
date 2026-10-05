@@ -12,9 +12,9 @@ D9 --- R220 --- LED(+) --- LED(-) --- GND
 const int LED_PIN = 9; // 使用するピン = 9番
 
 // 変数を定義
-float angle = .0f;            // 現在の角度
-float angle_spd = .01f;       // 角度の変化速度
-float angle_max = 2.0f * PI;  // 角度の最大値
+float angle = .0f;           // 現在の角度
+float angle_spd = .01f;      // 角度の変化速度
+float angle_max = 2.0f * PI; // 角度の最大値
 
 void setup() {
   // 9番ピンを出力モードに
