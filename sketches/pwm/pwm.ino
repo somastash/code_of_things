@@ -31,7 +31,7 @@ void loop() {
   analogWrite(LED_PIN, 192); // 明るさ = 194
   delay(1000);
 
-  analogWrite(LED_PIN, 255); // 明るさ = 255
+  analogWrite(LED_PIN, 255); // 明るさ = 255（最大）
   delay(1000);
 
   // フェードイン
@@ -39,6 +39,7 @@ void loop() {
     analogWrite(LED_PIN, i); // 明るさ = i
     delay(5);
   }
+
   // フェードアウト
   for (int i = 255; i >= 0; i--) {
     analogWrite(LED_PIN, i); // 明るさ = i
