@@ -188,8 +188,31 @@ theme: press
 LED やモーター、ブザーなどへの*出力*の処理に至るまでを、
 書き込んだ**プログラムによって自在に制御**することができる。
 
+当講義では [Arduino UNO R3](https://store-usa.arduino.cc/products/arduino-uno-rev3) を用いるが、
+扱うコードは基本的に Arduino のどのモデルにも適用できる。
+
 </div>
 </div>
+
+---
+
+## Arduino 開発環境の準備
+Arduino のプログラミングには [*Arduino IDE*](https://www.arduino.cc/en/software/) を用いる。 
+IDE とは*統合開発環境 <small>(Integrated Development Environment) </small>* を意味し、
+コーディング, コンパイル, Arduino への書き込み、といった一連の制作工程をそれ一つでこなすことができる。
+
+---
+
+Arduino IDE を起動したら初めに初期設定を行う。
+
+まず、使用する Arduino に適合する **Board** を指定する。
+メニューバーから `Tools ➔ Board ➔ Arduino AVR Boards ➔ Arduino UNO` を選択しよう。
+
+次に、Arduino との接続に使用する **Port** を指定する。
+PC に Arduino を USB で接続し、
+メニューバーから `Tools ➔ Port ➔ /dev/cu.usbmodemXXXXX` <small>（`XXXXX` は固有の識別番号）</small> を選択しよう。
+
+これらの設定は IDE に保存され、以降は自動で選択される。
 
 ---
 
@@ -249,3 +272,7 @@ Arduino でモーターやボタンなどの電子部品を制御するには、
 
 </div>
 </div>
+
+---
+
+
