@@ -138,8 +138,8 @@ void loop() {
 
 この回路では、
 
-- ボタンを*押していない*間は `D2` が *`HIGH`*
-- ボタンを*押している*間は `D2` が *`LOW`*
+- ボタンを<b class="red">押していない間</b>は `D2` が <code class="red">HIGH</code>
+- ボタンを<b class="green">押している間</b>は `D2` が <code class="green">LOW</code>
 
 になる。
 
