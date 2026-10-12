@@ -11,10 +11,12 @@
 ***/
 
 const int sensor_pin = A0; // A0 ピンを光センサーとして使用
+const int led_pin = 9;
 
 void setup() {
 	// シリアル通信初期化
 	Serial.begin(9600);
+	pinMode(led_pin, OUTPUT);
 }
 
 void loop() {
@@ -23,9 +25,11 @@ void loop() {
 
 	// 明るさの数値をシリアルモニタに出力
 	Serial.println(light);
+
+	analogWrite(led_pin, map(light, , 1023, 255, 0));
 	
 	// 一瞬停止
-	delay(200);
+	delay(100);
 
 	// 次の loop へ...
 }
