@@ -87,7 +87,7 @@ Arduino で実践しながら学んでいこう。</p>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-theme="press" lang="ja" data-marpit-pagination="8" style="--paginate:true;--theme:press;" data-marpit-pagination-total="11">
 <p>次はコードを書こう。<br />
 <code>setup()</code> で <code>D2</code> ピンを<strong>入力モード<small>（プルアップ抵抗付き）</small></strong> に設定する。</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c"><span class="hljs-type">const</span> <span class="hljs-type">int</span> btn_pin = <span class="hljs-number">2</span>; <span class="hljs-comment">// D2 をタクトスイッチと接続</span>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-c"><span class="hljs-type">const</span> <span class="hljs-type">int</span> btn_pin = <span class="hljs-number">2</span>; <span class="hljs-comment">// D2 ピンを使用</span>
 
 <span class="hljs-type">void</span> <span class="hljs-title function_">setup</span><span class="hljs-params">()</span> {
   pinMode(btn_pin, INPUT_PULLUP); <span class="hljs-comment">// D2 を入力モードにする（プルアップ抵抗）</span>

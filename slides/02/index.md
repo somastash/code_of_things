@@ -108,7 +108,7 @@ D2 ➔ タクトスイッチ ➔ GND
 `setup()` で `D2` ピンを**入力モード<small>（プルアップ抵抗付き）</small>** に設定する。 
 
 ```c
-const int btn_pin = 2; // D2 をタクトスイッチと接続
+const int btn_pin = 2; // D2 ピンを使用
 
 void setup() {
   pinMode(btn_pin, INPUT_PULLUP); // D2 を入力モードにする（プルアップ抵抗）
