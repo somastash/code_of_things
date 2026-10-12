@@ -22,7 +22,7 @@ void setup() {
 }
 
 void loop() {
-  // ボタンが押されているか否か
+  // ボタンが押されているか否か (true = 押されている, false = 押されていない)
   bool pressed = digitalRead(btn_pin) == LOW;
   if (pressed) { // 押されている場合
     analogWrite(led_pin, 255);
