@@ -1,26 +1,33 @@
-const int LED_PIN = 9;
-const int BTN_PIN = 2;
+/***
 
-float angle = .0f;
-float angle_spd = .01f;
-float angle_max = 2.0f * PI;
+回路:
+  D9 --- R220 --- LED --- GND
+  D2 --- BTN --- GND
+
+プルアップ抵抗:
+  ボタンを押していない時:
+    5V --- 内部プルアップ抵抗 --- D2 (HIGH) -x- BTN
+
+  ボタンを押している時:
+    5V --- 内部プルアップ抵抗 --- D2 (LOW) --- BTN --- GND
+
+***/
+
+const int led_pin = 9;
+const int btn_pin = 2;
 
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(BTN_PIN, INPUT_PULLUP);
+  pinMode(led_pin, OUTPUT);
+  pinMode(btn_pin, INPUT_PULLUP);
 }
 
 void loop() {
-  bool pressed = digitalRead(BTN_PIN) == LOW;
-  if (pressed) {
-    analogWrite(LED_PIN, round((sin(angle) + 1.0f) * 127.5f));
-    angle += angle_spd;
-    if (angle >= angle_max) angle -= angle_max;
-    
-  } else {
-    analogWrite(LED_PIN, 0);
-    angle = .0f;
+  // ボタンが押されているか否か
+  bool pressed = digitalRead(btn_pin) == LOW;
+  if (pressed) { // 押されている場合
+    analogWrite(led_pin, 255);
+  } else { // 押されていない場合
+    analogWrite(led_pin, 0);
   }
-
   delay(2);
 }
