@@ -8,7 +8,7 @@ struct RGB {
 };
 
 int gamma_correct(int value) {
-    return round(255 * pow(value / 255.0, 2.2));
+	return round(255 * pow(value / 255.0, 2.2));
 }
 
 RGB hsl_to_rgb(int hue, float saturation, float lightness) {
